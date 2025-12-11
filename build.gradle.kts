@@ -3,6 +3,8 @@ plugins {
     application
 }
 
+group = "com.example"
+
 repositories {
     mavenCentral()
 }
@@ -21,5 +23,5 @@ kotlin {
 }
 
 application {
-    mainClass.set("com.example.demo.AppKt")
+    mainClass.set("${group}.demo.AppKt")
 }
