@@ -1,0 +1,19 @@
+{
+  "name": "demo-kotlin-lsp",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "features": {
+    "ghcr.io/ChristopherMacGown/devcontainer-features/direnv:1": {},
+    "ghcr.io/jsburckhardt/devcontainer-features/gitleaks:1": {}
+  },
+  "initializeCommand": "bash .devcontainer/initial.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "${containerWorkspaceFolder}/.extensions/kotlin.vsix",
+        "vscjava.vscode-gradle"
+      ]
+    }
+  }
+}
